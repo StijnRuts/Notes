@@ -11,6 +11,10 @@
         notes = {
           layers = [
             {
+              path = ./.;
+              pathString = "./modules";
+            }
+            {
               path = ../notes;
               pathString = "./notes";
             }
