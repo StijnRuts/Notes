@@ -4,6 +4,7 @@
   outputs = inputs: inputs.flake-parts.lib.mkFlake { inherit inputs; } (inputs.import-tree ./modules);
 
   inputs = {
+    emanote.url = "github:srid/emanote";
     flake-file.url = "github:denful/flake-file";
     flake-parts = {
       url = "github:hercules-ci/flake-parts";
