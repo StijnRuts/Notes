@@ -1,1 +1,34 @@
-../.zk/config.toml
+[note]
+default-title = "Untitled"
+filename = "{{slug title}}"
+extension = "md"
+template = "default.md"
+ignore = ["!notes/"]
+
+[format.markdown]
+link-format = "[[{{filename}}]]"
+link-drop-extension = true
+hashtags = true
+colon-tags = false
+multiword-tags = false
+
+[tool]
+editor = "hx"
+pager = "bat --paging=always --color=always"
+fzf-preview = "bat -p --color always {-1}"
+
+[lsp.diagnostics]
+wiki-title = "hint"
+dead-link = "error"
+self-link = "warning"
+missing-backlink = { level = "hint", position = "bottom" }
+
+[lsp.completion]
+note-label = "{{title-or-path}}"
+note-filter = "--sort modified-"
+note-filter-text = "{{title}}"
+note-detail = "{{filename-stem}}"
+
+[alias]
+n = 'zk new "$ZK_NOTEBOOK_DIR/notes" --title "$*"'
+e = 'zk edit "$ZK_NOTEBOOK_DIR/notes" --sort modified- --interactive'
