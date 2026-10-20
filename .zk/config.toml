@@ -30,4 +30,5 @@ note-filter-text = "{{title}}"
 note-detail = "{{filename-stem}}"
 
 [alias]
-recent = "zk edit --sort modified- --interactive"
+n = 'zk new "$ZK_NOTEBOOK_DIR/notes" --title "$*"'
+e = 'zk edit "$ZK_NOTEBOOK_DIR/notes" --sort modified- --interactive'
