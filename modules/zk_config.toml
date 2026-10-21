@@ -30,5 +30,7 @@ note-filter-text = "{{title}}"
 note-detail = "{{filename-stem}}"
 
 [alias]
-n = 'zk new "$ZK_NOTEBOOK_DIR/notes" --title "$*"'
-e = 'zk edit "$ZK_NOTEBOOK_DIR/notes" --sort modified- --interactive'
+n = 'zk new "$ZK_NOTEBOOK_DIR/public_notes" --title "$*"'
+e = 'zk edit "$ZK_NOTEBOOK_DIR/public_notes" --sort modified- --interactive'
+np = 'zk new "$ZK_NOTEBOOK_DIR/private_notes" --title "$*"'
+ep = 'zk edit "$ZK_NOTEBOOK_DIR/private_notes" --sort modified- --interactive'
