@@ -3,7 +3,6 @@ default-title = "Untitled"
 filename = "{{slug title}}"
 extension = "md"
 template = "default.md"
-ignore = ["!notes/"]
 
 [format.markdown]
 link-format = "[[{{filename}}]]"
@@ -29,8 +28,18 @@ note-filter = "--sort modified-"
 note-filter-text = "{{title}}"
 note-detail = "{{filename-stem}}"
 
+[group.journal]
+paths = ["journal"]
+
+[group.journal.note]
+filename = "{{format-date now '%Y-%m-%d'}}"
+extension = "md"
+template = "journal.md"
+
 [alias]
 n = 'zk new "$ZK_NOTEBOOK_DIR/public_notes" --title "$*"'
 e = 'zk edit "$ZK_NOTEBOOK_DIR/public_notes" --sort modified- --interactive'
 np = 'zk new "$ZK_NOTEBOOK_DIR/private_notes" --title "$*"'
 ep = 'zk edit "$ZK_NOTEBOOK_DIR/private_notes" --sort modified- --interactive'
+nj = 'zk new "$ZK_NOTEBOOK_DIR/journal" --no-input'
+ej = 'zk edit "$ZK_NOTEBOOK_DIR/journal" --sort title- --interactive'

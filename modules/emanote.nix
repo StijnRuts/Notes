@@ -17,6 +17,11 @@ let
       pathString = "./private_notes";
       mountPoint = "private";
     }
+    {
+      path = ../journal;
+      pathString = "./journal";
+      mountPoint = "journal";
+    }
   ];
 in
 {
