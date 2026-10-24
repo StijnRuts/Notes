@@ -2,13 +2,33 @@
 let
   publicLayers = [
     {
+      path = ../public_notes;
+      pathString = "./public_notes";
+    }
+    {
       path = ./.;
       pathString = "./modules";
       mountPoint = "modules";
     }
     {
-      path = ../public_notes;
-      pathString = "./public_notes";
+      path = ../nixos-modules;
+      pathString = "./nixos-modules";
+      mountPoint = "nixos-modules";
+    }
+    {
+      path = ../nixos-configurations;
+      pathString = "./nixos-configurations";
+      mountPoint = "nixos-configurations";
+    }
+    {
+      path = ../home-modules;
+      pathString = "./home-modules";
+      mountPoint = "home-modules";
+    }
+    {
+      path = ../home-configurations;
+      pathString = "./home-configurations";
+      mountPoint = "home-configurations";
     }
   ];
   privateLayers = [
@@ -26,7 +46,11 @@ let
 in
 {
   flake-file.inputs = {
-    emanote.url = "github:srid/emanote";
+    emanote = {
+      url = "github:srid/emanote";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-parts.follows = "flake-parts";
+    };
   };
 
   imports = [ inputs.emanote.flakeModule ];
