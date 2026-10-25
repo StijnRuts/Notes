@@ -5,6 +5,7 @@
       url = "github:nix-community/disko/latest";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    impermanence.url = "github:nix-community/impermanence";
   };
 
   outputs = inputs: {
@@ -14,6 +15,8 @@
         modules = [
           inputs.disko.nixosModules.disko
           ./disko.nix
+          inputs.impermanence.nixosModules.impermanence
+          ./impermanence.nix
           ./hardware-configuration.nix
           ./configuration.nix
         ];

@@ -14,3 +14,10 @@ sudo nixos-install --no-root-password --flake .#X201
 sudo nixos-generate-config --no-filesystems --root /mnt
 vim /mnt/etc/nixos/hardware-configuration.nix
 ```
+
+# Updating
+
+```bash
+sudo nixos-rebuild test --show-trace --flake .
+sudo nixos-rebuild switch --show-trace --flake .
+```
