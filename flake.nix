@@ -5,6 +5,7 @@
 
   inputs = {
     disko.url = "github:nix-community/disko/latest";
+    ez-configs.url = "github:ehllie/ez-configs";
     flake-file.url = "github:denful/flake-file";
     flake-parts = {
       url = "github:hercules-ci/flake-parts";

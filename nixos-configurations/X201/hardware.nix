@@ -2,10 +2,20 @@
   config,
   lib,
   modulesPath,
+  pkgs,
   ...
 }:
 {
   imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
+
+  boot.loader.grub = {
+    enable = true;
+    device = "/dev/sda";
+    useOSProber = true;
+    fsIdentifier = "provided";
+  };
+
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   boot.initrd.availableKernelModules = [
     "ehci_pci"
