@@ -51,9 +51,7 @@
       "/var/lib/bluetooth"
       "/etc/NetworkManager/system-connections"
     ];
-    files = [
-      "/etc/machine-id"
-    ];
+    files = [ "/etc/machine-id" ];
 
     users.stijn = {
       directories = [
@@ -68,7 +66,10 @@
         "Templates"
         "Videos"
         ".local/share/Trash"
-        { directory = ".ssh"; mode = "0700"; }
+        {
+          directory = ".ssh";
+          mode = "0700";
+        }
       ];
     };
   };
