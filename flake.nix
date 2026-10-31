@@ -1,21 +1,21 @@
+# DO-NOT-EDIT. This file was auto-generated using github:denful/flake-file.
+# Use `nix run .#write-flake` to regenerate it.
 {
   outputs = inputs: inputs.flake-parts.lib.mkFlake { inherit inputs; } (inputs.import-tree ./modules);
 
   inputs = {
     den.url = "github:denful/den";
+    disko.url = "github:nix-community/disko/latest";
     flake-file.url = "github:vic/flake-file";
     flake-parts = {
-      inputs.nixpkgs-lib.follows = "nixpkgs-lib";
       url = "github:hercules-ci/flake-parts";
+      inputs.nixpkgs-lib.follows = "nixpkgs";
     };
-    home-manager.url = "github:nix-community/home-manager";
-    import-tree.url = "github:vic/import-tree";
-    make-shell.url = "github:nicknovitski/make-shell";
-    nixpkgs.url = "https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.xz";
-    nixpkgs-lib.follows = "nixpkgs";
-    treefmt-nix.url = "github:numtide/treefmt-nix";
-    disko.url = "github:nix-community/disko/latest";
-    ez-configs.url = "github:ehllie/ez-configs";
+    home-manager.url = "github:nix-community/home-manager/release-26.05";
     impermanence.url = "github:nix-community/impermanence";
+    import-tree.url = "github:denful/import-tree";
+    make-shell.url = "github:nicknovitski/make-shell";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
+    treefmt-nix.url = "github:numtide/treefmt-nix";
   };
 }

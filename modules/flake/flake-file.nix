@@ -1,5 +1,4 @@
-{ inputs, ... }:
-{
+{ inputs, ... }: {
   flake-file.inputs = {
     flake-file.url = "github:vic/flake-file";
   };
