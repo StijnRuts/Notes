@@ -1,33 +1,23 @@
-# Getting Started Guide
+# Installing
 
-Steps you can follow after cloning this template:
+```bash
+cd NixOS-config
 
-- Be sure to read the [den documentation](https://den.denful.dev)
+sudo nix --experimental-features "nix-command flakes" run github:nix-community/disko/latest -- --mode destroy,format,mount disko.nix
 
-- Update den input.
-
-```console
-nix flake update den
+sudo nixos-install --no-root-password --flake .#X201
 ```
 
-- Edit [modules/hosts.nix](modules/hosts.nix)
+## New device
 
-- Build
-
-```console
-# default action is build
-nix run .#igloo
-
-# pass any other nh action
-nix run .#igloo -- switch
+```bash
+sudo nixos-generate-config --no-filesystems --root /mnt
+vim /mnt/etc/nixos/hardware-configuration.nix
 ```
 
-- Run the VM
+# Updating
 
-We recommend to use a VM develop cycle so you can play with the system before applying to your hardware.
-
-See [modules/vm.nix](modules/vm.nix)
-
-```console
-nix run .#vm
+```bash
+sudo nixos-rebuild test --show-trace --flake .
+sudo nixos-rebuild switch --show-trace --flake .
 ```

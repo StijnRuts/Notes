@@ -1,7 +1,4 @@
-# DO-NOT-EDIT. This file was auto-generated using github:vic/flake-file.
-# Use `nix run .#write-flake` to regenerate it.
 {
-
   outputs = inputs: inputs.flake-parts.lib.mkFlake { inherit inputs; } (inputs.import-tree ./modules);
 
   inputs = {
@@ -17,6 +14,8 @@
     nixpkgs.url = "https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.xz";
     nixpkgs-lib.follows = "nixpkgs";
     treefmt-nix.url = "github:numtide/treefmt-nix";
+    disko.url = "github:nix-community/disko/latest";
+    ez-configs.url = "github:ehllie/ez-configs";
+    impermanence.url = "github:nix-community/impermanence";
   };
-
 }
