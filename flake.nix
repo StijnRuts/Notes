@@ -11,13 +11,12 @@
       inputs.nixpkgs-lib.follows = "nixpkgs-lib";
       url = "github:hercules-ci/flake-parts";
     };
-    home-manager = {
-      inputs.nixpkgs.follows = "nixpkgs";
-      url = "github:nix-community/home-manager";
-    };
+    home-manager.url = "github:nix-community/home-manager";
     import-tree.url = "github:vic/import-tree";
+    make-shell.url = "github:nicknovitski/make-shell";
     nixpkgs.url = "https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.xz";
     nixpkgs-lib.follows = "nixpkgs";
+    treefmt-nix.url = "github:numtide/treefmt-nix";
   };
 
 }
