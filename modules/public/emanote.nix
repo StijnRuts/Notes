@@ -2,23 +2,33 @@
 let
   publicLayers = [
     {
-      path = ./.;
-      pathString = "./modules";
+      path = ../../notes/public;
+      pathString = "./notes/public";
+    }
+    {
+      path = ../../modules/public;
+      pathString = "./modules/public";
       mountPoint = "modules";
     }
     {
-      path = ../public_notes;
-      pathString = "./public_notes";
+      path = ../../config;
+      pathString = "./config";
+      mountPoint = "config";
     }
   ];
   privateLayers = [
     {
-      path = ../private_notes;
-      pathString = "./private_notes";
+      path = ../../notes/private;
+      pathString = "./notes/private";
       mountPoint = "private";
     }
     {
-      path = ../journal;
+      path = ../../modules/private;
+      pathString = "./modules/private";
+      mountPoint = "private/modules";
+    }
+    {
+      path = ../../journal;
       pathString = "./journal";
       mountPoint = "journal";
     }

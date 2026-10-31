@@ -1,5 +1,5 @@
 {
-  den.aspects.nix.nixos = {
+  den.aspects.experimental.nixos = {
     nix.settings.experimental-features = [
       "nix-command"
       "flakes"

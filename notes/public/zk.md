@@ -16,7 +16,7 @@ Notes stay in [[markdown]], so they remain portable and can be published separat
 
 [Homepage](https://zk-org.github.io/zk)
 
-## Flake module
+## Nix module
 
 ![[zk.nix]]
 

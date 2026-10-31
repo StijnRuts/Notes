@@ -20,7 +20,3 @@ Because modules are imported automatically (for example with [[import-tree]]), f
 
 [[flake-file]]
 
-## Flake module
-
-![[dendritic.nix]]
-
