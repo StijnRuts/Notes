@@ -17,7 +17,7 @@ or through a flake module such as `treefmt-nix`, and treefmt applies them consis
 
 [Alternate homepage](https://numtide.com/projects/treefmt)
 
-## Flake module
+## Nix module
 
 ![[treefmt.nix]]
 

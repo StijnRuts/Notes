@@ -16,6 +16,6 @@ so every contributor gets the same setup on any machine.
 
 [Nix Wiki](https://wiki.nixos.org/wiki/Development_environment_with_nix-shell)
 
-## Flake module
+## Nix module
 
 ![[devshell.nix]]

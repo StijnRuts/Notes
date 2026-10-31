@@ -19,6 +19,6 @@ Notes are connected with wikilinks, while YAML frontmatter provides configuratio
 
 [[zk]]
 
-## Flake module
+## Nix module
 
 ![[emanote.nix]]

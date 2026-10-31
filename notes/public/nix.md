@@ -25,6 +25,6 @@ Its lazy, declarative language evaluates expressions to derivations, which descr
 
 [[flakes]]
 
-## Flake Module
+## Nix module
 
 ![[nix.nix]]
