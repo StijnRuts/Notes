@@ -16,4 +16,8 @@ Instead of one large `outputs` function, features are declared as modules with o
 
 ## See also
 
+[[flakes]]
+
+[[import-tree]]
+
 [[dendritic]]

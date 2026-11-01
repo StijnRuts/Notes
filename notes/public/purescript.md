@@ -16,3 +16,7 @@ Its small generated output and expressive type system make it well suited to fro
 [Homepage](https://www.purescript.org)
 
 [Pursuit](https://pursuit.purescript.org)
+
+## See also
+
+[[haskell]]

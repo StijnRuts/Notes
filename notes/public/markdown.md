@@ -16,5 +16,15 @@ Its portability and diff-friendly plain-text format have made it a default choic
 
 ## Links
 
-[Homepage](https://commonmark.org)
+[CommonMark specification](https://commonmark.org)
+
+[Markdown Guide](https://www.markdownguide.org)
+
+[Original Markdown](https://daringfireball.net/projects/markdown/)
+
+## See also
+
+[[emanote]]
+
+[[zk]]
 

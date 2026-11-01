@@ -8,7 +8,7 @@ tags:
 ## About
 
 import-tree is a small [[nix]] library that recursively imports Nix modules from a directory.
-By default it imports all `.nix` files under the given path (ignoring paths starting with an undescore),
+By default it imports all `.nix` files under the given path (ignoring paths starting with an underscore),
 and it works with [[flake-parts]], [[nixos]], [[home-manager]], nix-darwin, and plain `lib.evalModules`.
 It is commonly used to implement the [[dendritic]] pattern, where every file is a module and directory paths only describe features.
 
@@ -19,3 +19,5 @@ It is commonly used to implement the [[dendritic]] pattern, where every file is 
 ## See also
 
 [[flake-file]]
+
+[[flake-parts]]

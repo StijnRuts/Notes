@@ -16,6 +16,16 @@ Notes stay in [[markdown]], so they remain portable and can be published separat
 
 [Homepage](https://zk-org.github.io/zk)
 
+[GitHub](https://github.com/zk-org/zk)
+
+## See also
+
+[[zettelkasten]]
+
+[[emanote]]
+
+[[markdown]]
+
 ## Nix module
 
 ![[zk.nix]]

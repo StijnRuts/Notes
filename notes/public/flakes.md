@@ -20,4 +20,8 @@ Inputs can be other flakes or plain source trees, and outputs can include packag
 
 [[flake-parts]]
 
+[[flake-file]]
+
+[[import-tree]]
+
 [[dendritic]]

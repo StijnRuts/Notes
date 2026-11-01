@@ -17,3 +17,9 @@ Notes are often labelled as seedlings, budding, or evergreen to signal their mat
 ## See also
 
 [[zettelkasten]]
+
+[[emanote]]
+
+[[zk]]
+
+[[markdown]]

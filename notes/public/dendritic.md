@@ -18,5 +18,11 @@ Because modules are imported automatically (for example with [[import-tree]]), f
 
 ## See also
 
+[[flake-parts]]
+
+[[import-tree]]
+
 [[flake-file]]
+
+[[den]]
 

@@ -1,3 +1,8 @@
+---
+tags:
+  - programming
+---
+
 # Functional programming
 
 ## About

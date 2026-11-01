@@ -21,3 +21,7 @@ Haskell's emphasis on purity and expressive types has made it influential across
 [Hoogle](https://hoogle.haskell.org)
 
 [Hackage](https://hackage.haskell.org)
+
+## See also
+
+[[purescript]]
